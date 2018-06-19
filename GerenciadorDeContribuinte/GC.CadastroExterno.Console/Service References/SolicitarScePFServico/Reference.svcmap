@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="255758b0-79d3-418f-8809-adb8d5c6a297" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52558/SolicitarScePFServico.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SolicitarScePFServico.xsd" MetadataType="Schema" ID="745bbe72-3ac2-4247-811d-44e69612c8cc" SourceId="1" SourceUrl="http://localhost:52558/SolicitarScePFServico.svc?xsd=xsd0" />
+    <MetadataFile FileName="SolicitarScePFServico.wsdl" MetadataType="Wsdl" ID="efabcae7-e46b-47b8-9882-e9328bd9344b" SourceId="1" SourceUrl="http://localhost:52558/SolicitarScePFServico.svc?wsdl" />
+    <MetadataFile FileName="SolicitarScePFServico1.xsd" MetadataType="Schema" ID="91bb6140-92bf-4384-82bb-ed002755fb2c" SourceId="1" SourceUrl="http://localhost:52558/SolicitarScePFServico.svc?xsd=xsd2" />
+    <MetadataFile FileName="SolicitarScePFServico.disco" MetadataType="Disco" ID="361d48cf-c169-42c7-92a2-a1fb9f92eec1" SourceId="1" SourceUrl="http://localhost:52558/SolicitarScePFServico.svc?disco" />
+    <MetadataFile FileName="SolicitarScePFServico2.xsd" MetadataType="Schema" ID="e6d4bd2c-314c-43bd-bdcf-575543635f8b" SourceId="1" SourceUrl="http://localhost:52558/SolicitarScePFServico.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

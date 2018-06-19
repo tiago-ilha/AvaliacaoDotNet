@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GC.CadastroExterno.Servico" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GC.CadastroExterno.Servico" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SolicitarScePF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cpf" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataDeNascimento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Emails" nillable="true" type="tns:ArrayOfEmailViewModel" />
+      <xs:element minOccurs="0" name="Enderecos" nillable="true" type="tns:ArrayOfEnderecoViewModel" />
+      <xs:element minOccurs="0" name="IndicaAvulso" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NomeCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefones" nillable="true" type="tns:ArrayOfTelefoneViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SolicitarScePF" nillable="true" type="tns:SolicitarScePF" />
+  <xs:complexType name="ArrayOfEmailViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailViewModel" nillable="true" type="tns:EmailViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailViewModel" nillable="true" type="tns:ArrayOfEmailViewModel" />
+  <xs:complexType name="EmailViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailViewModel" nillable="true" type="tns:EmailViewModel" />
+  <xs:complexType name="ArrayOfEnderecoViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnderecoViewModel" nillable="true" type="tns:EnderecoViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnderecoViewModel" nillable="true" type="tns:ArrayOfEnderecoViewModel" />
+  <xs:complexType name="EnderecoViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cep" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoEndereco" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnderecoViewModel" nillable="true" type="tns:EnderecoViewModel" />
+  <xs:complexType name="ArrayOfTelefoneViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TelefoneViewModel" nillable="true" type="tns:TelefoneViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTelefoneViewModel" nillable="true" type="tns:ArrayOfTelefoneViewModel" />
+  <xs:complexType name="TelefoneViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TelefoneViewModel" nillable="true" type="tns:TelefoneViewModel" />
+</xs:schema>
